@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>納車日程管理システム</title>
+        
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        
+        <header>
+            <p>納車日程管理システム</p>
+        </header>
+        
+        <div>
+            顧客名      <input type="text" class="customerName"><br>
+            種類        <input type="text" class="condition"><br>
+            営業名      <input type="text" class="salesmanName"><br>
+            車種名      <input type="text" class="vehicleType"><br>
+            色          <input type="text" class="color"><br>
+            コーティング<input type="text" class="coating"><br>
+            施工状況    <input type="text" class="constructionStatus"><br>
+            納車日      <input type="text" class="deliveryDate"><br>
+            
+            <button class="addButton">追加</button>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 grey">9/30　新車　小林様　A4AV　黒　DG</div>
+                <div class="col-md-12 grey">10/1　中古　小林様　RS6　黒　DG</div>
+                <div class="col-md-12 grey">10/2　新車　小林様　Q8　黒　DG</div>
+            </div>
+        </div>
+
+        <footer>
+            <small>&copy; 納車日程管理システム-monaka-</small>
+        </footer>
+        
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-functions.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-messaging.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-performance.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+        <script>
+          var firebaseConfig = {
+            apiKey: "AIzaSyA97pdjBYIeYEXPrFfRdvjXOIUuOVke0Sk",
+            authDomain: "monaka-cac86.firebaseapp.com",
+            databaseURL: "https://monaka-cac86.firebaseio.com",
+            projectId: "monaka-cac86",
+            storageBucket: "monaka-cac86.appspot.com",
+            messagingSenderId: "989856364245",
+            appId: "1:989856364245:web:c22e2ff2c18b7703b3d45c",
+            measurementId: "G-EDKNRQGEJQ"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="./js/main.js"></script>
+
+    </body>
+</html>
